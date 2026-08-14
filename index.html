@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DC - The Mind Behind The Screen | Kannan V S">
+  <title>DC - The Mind Behind The Screen | Kannan V S</title>
+  <link rel="stylesheet" href="index.css?v=15">
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- FULL-SCREEN CINEMATIC INTRO OVERLAY -->
+  <div id="cinematic-intro" class="cinematic-intro-overlay">
+    <!-- Atmospheric Blood-Red Canvas / Mist Layer -->
+    <div class="intro-bg-glow"></div>
+    <div class="intro-liquid-mist"></div>
+    <div class="intro-film-grain"></div>
+
+    <!-- Intro Typography Container -->
+    <div class="intro-content-container">
+      <div class="intro-welcome-text">WELCOME TO</div>
+      <div class="intro-dc-title-wrapper">
+        <h1 class="intro-dc-title">DC</h1>
+        <div class="intro-blade-slash"></div>
+      </div>
+      <div class="intro-director-text">A LOKESH KANAGARAJ FILM</div>
+    </div>
+
+    <!-- Skip Hint Indicator -->
+    <div class="intro-skip-hint">CLICK ANYWHERE TO SKIP &rarr;</div>
+  </div>
+
+  <!-- Full-Bleed Background Canvas for Scroll Frame Sequence -->
+  <div class="cinema-viewport">
+    <canvas id="cinema-canvas"></canvas>
+    <div class="cinematic-vignette"></div>
+  </div>
+
+  <!-- Main Smooth Scroll Sections Stack -->
+  <main class="cinematic-scroll-container">
+
+    <!-- SECTION 1: CINEMATIC OPENING SHOT -->
+    <section class="cinematic-act hero-act" id="act-1">
+      
+      <!-- Top Movie Header & Metadata -->
+      <div class="hero-header-content">
+        <div class="theatre-badge">NOW PLAYING IN THEATRES</div>
+        <h1 class="movie-title">DC</h1>
+        <div class="movie-tagline">A LOKESH KANAGARAJ FILM</div>
+        <div class="movie-genre">ACTION &bull; THRILLER &bull; DRAMA</div>
+      </div>
+
+      <!-- Hero Poster Container with Interactive Character Hover Zones -->
+      <div class="hero-poster-wrapper">
+        <div class="poster-card">
+          <img src="./assets/hero_poster.jpg" alt="DC Movie Poster" class="poster-img">
+
+          <!-- Left Interactive Zone: Hero Lokesh Kanagaraj -->
+          <div class="character-zone hero-zone">
+            <div class="character-info-card hero-info">
+              <span class="character-role hero-role">HERO</span>
+              <h2 class="character-actor">LOKESH KANAGARAJ</h2>
+              <p class="character-name">AS &ldquo;DEVADAS&rdquo;</p>
+            </div>
+          </div>
+
+          <!-- Right Interactive Zone: Heroine Wamiqa Gabbi -->
+          <div class="character-zone heroine-zone">
+            <div class="character-info-card heroine-info">
+              <span class="character-role heroine-role">HEROINE</span>
+              <h2 class="character-actor">WAMIQA GABBI</h2>
+              <p class="character-name">AS &ldquo;CHANDRA&rdquo;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Scroll to Explore Indicator -->
+      <div class="scroll-explore-indicator">
+        <span class="explore-text">SCROLL TO EXPLORE</span>
+        <span class="explore-arrow">&darr;</span>
+      </div>
+
+    </section>
+
+    <!-- SECTION 2: PREMIUM MOVIE OVERVIEW -->
+    <section class="cinematic-act overview-act" id="act-2">
+      
+      <div class="overview-container">
+        
+        <!-- LEFT COLUMN: Header & Movie Poster Still -->
+        <div class="overview-left">
+          <div class="overview-eyebrow">OVERVIEW</div>
+          <h2 class="overview-title">THE STORY BEHIND DC</h2>
+          <div class="overview-line"></div>
+          
+          <div class="overview-poster-frame">
+            <img src="./assets/section2_still.jpg" alt="DC Movie Still" class="overview-poster-img">
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Story Synopsis & Metadata Grid -->
+        <div class="overview-right">
+          
+          <!-- Story Synopsis Paragraphs -->
+          <div class="overview-synopsis">
+            <p class="synopsis-p">Reimagining Sarat Chandra Chattopadhyay's classic novel <em>Devdas</em> alongside shades of <em>Bonnie and Clyde</em>, <strong>DC: The Bloody Valentine</strong> enters a gritty contemporary world ruled by guns, cops, and gangsters.</p>
+
+            <p class="synopsis-p">The story follows <strong>Devadas</strong> (Lokesh Kanagaraj), a rebellious outlaw on the run from a ruthless police force who gets pulled into a violent spiral of romance, vengeance, and redemption as <strong>Chandra</strong> (Wamiqa Gabbi) and <strong>Parvathy</strong> (Sanjana Krishnamoorthy) enter his life.</p>
+
+            <p class="synopsis-p">Directed by Arun Matheswaran and produced by Sun Pictures, the film delivers cathartic action, striking cinematography by Mukesh G, and a pulsating electronic-fusion background score by Anirudh Ravichander.</p>
+          </div>
+
+          <div class="overview-divider"></div>
+
+          <!-- Metadata Rows -->
+          <div class="overview-meta-grid">
+            <div class="meta-row">
+              <span class="meta-key">DIRECTED BY</span>
+              <span class="meta-val">Arun Matheswaran</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">PRODUCED BY</span>
+              <span class="meta-val">Sun Pictures</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">STARRING</span>
+              <span class="meta-val">Lokesh Kanagaraj &bull; Wamiqa Gabbi &bull; Sanjana Krishnamoorthy</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">GENRE</span>
+              <span class="meta-val">Romantic Action Thriller</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">RELEASE</span>
+              <span class="meta-val">August 2026</span>
+            </div>
+          </div>
+
+          <div class="overview-tagline">
+            LOVE &bull; VENGEANCE &bull; REDEMPTION
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Indicator for Section 2 -->
+      <div class="scroll-discover-indicator">
+        <span class="discover-text">SCROLL TO DISCOVER</span>
+        <span class="discover-arrow">&darr;</span>
+      </div>
+
+    </section>
+
+    <!-- SECTION 3: ANIRUDH RAVICHANDER & THE SOUNDTRACK SHOWCASE -->
+    <section class="cinematic-act music-act" id="act-3">
+      
+      <div class="music-section-wrapper">
+        
+        <!-- BLOCK 1: ANIRUDH ARTIST REVEAL -->
+        <div class="anirudh-intro-block">
+          <span class="anirudh-eyebrow">THE SOUND OF DC</span>
+          <h2 class="anirudh-quote">THE MAN WHO TURNS<br>CHAOS INTO MUSIC.</h2>
+          <h3 class="anirudh-name">ANIRUDH RAVICHANDER</h3>
+          <p class="anirudh-subline">THE SOUND BEHIND THE WORLD OF DC</p>
+          <div class="anirudh-divider"></div>
+        </div>
+
+        <!-- BLOCK 2: SOUNDTRACK HEADER -->
+        <div class="soundtrack-header-block">
+          <h3 class="soundtrack-main-title">THE SOUNDTRACK</h3>
+          <p class="soundtrack-sub-title">Three sounds. One world.</p>
+        </div>
+
+        <!-- BLOCK 3: THREE SONGS SHOWCASE -->
+        <div class="songs-container">
+
+          <!-- SONG 01: HANGOVA (Image LEFT, Details RIGHT) -->
+          <div class="song-card-row song-row-left" id="song-01">
+            <div class="song-image-box">
+              <img src="./assets/song1_hangova.png" alt="Hangova Song Poster" class="song-poster">
+            </div>
+            <div class="song-info-box">
+              <span class="song-num">01</span>
+              <span class="song-tag">THE FIRST BEAT</span>
+              <h4 class="song-name">HANGOVA</h4>
+            </div>
+          </div>
+
+          <div class="song-row-divider"></div>
+
+          <!-- SONG 02: BUM BAA DIGA DIGA (Details LEFT, Image RIGHT) -->
+          <div class="song-card-row song-row-right" id="song-02">
+            <div class="song-info-box">
+              <span class="song-num">02</span>
+              <span class="song-tag">THE RHYTHM</span>
+              <h4 class="song-name">BUM BAA DIGA DIGA</h4>
+            </div>
+            <div class="song-image-box">
+              <img src="./assets/song2_bumbaadiga.png" alt="Bum Baa Diga Diga Song Poster" class="song-poster">
+            </div>
+          </div>
+
+          <div class="song-row-divider"></div>
+
+          <!-- SONG 03: RAGA OF REVENGE (Image LEFT, Details RIGHT) -->
+          <div class="song-card-row song-row-left" id="song-03">
+            <div class="song-image-box">
+              <img src="./assets/song3_ragaofrevenge.png" alt="Raga of Revenge Song Poster" class="song-poster">
+            </div>
+            <div class="song-info-box">
+              <span class="song-num">03</span>
+              <span class="song-tag">THE FURY</span>
+              <h4 class="song-name">RAGA OF REVENGE</h4>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BLOCK 4: FOOTER -->
+        <div class="music-footer-block">
+          <p class="music-tagline">TURN THE VOLUME OF THE WORLD UP.</p>
+          <div class="scroll-continue-box">
+            <span class="continue-lbl">SCROLL TO CONTINUE</span>
+            <span class="continue-icon">&darr;</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION 4: BEHIND THE FILM (ONE CONTINUOUS SECTION WITH 4 PARTS) -->
+    <section class="cinematic-act bts-act" id="act-4">
+
+      <div class="bts-section-wrapper">
+
+        <!-- SECTION 4 HEADER -->
+        <div class="bts-header-block">
+          <h2 class="bts-main-title">BEHIND THE FILM</h2>
+          <p class="bts-sub-title">THE VISION. THE PEOPLE. THE SOUND. THE TEAM.</p>
+          <div class="bts-title-line"></div>
+        </div>
+
+        <!-- 01 — THE DIRECTOR (Image RIGHT, Typography LEFT) -->
+        <div class="bts-part-item part-left-text" id="bts-part-01">
+          <div class="bts-info-box">
+            <span class="bts-num">01</span>
+            <span class="bts-role-tag">THE DIRECTOR</span>
+            <h3 class="bts-person-name">ARUN MATHESWARAN</h3>
+            <p class="bts-person-quote">&ldquo;THE VISION THAT SHAPED DC.&rdquo;</p>
+          </div>
+          <div class="bts-image-box">
+            <img src="./assets/bts1_director.png" alt="Arun Matheswaran Director" class="bts-img">
+            <div class="bts-img-vignette"></div>
+          </div>
+        </div>
+
+        <div class="bts-part-divider"></div>
+
+        <!-- 02 — THE PRODUCTION (Image LEFT, Typography RIGHT) -->
+        <div class="bts-part-item part-right-text" id="bts-part-02">
+          <div class="bts-image-box">
+            <img src="./assets/bts2_production.png" alt="Sun Pictures Production" class="bts-img logo-contain-fit">
+            <div class="bts-img-vignette"></div>
+          </div>
+          <div class="bts-info-box">
+            <span class="bts-num">02</span>
+            <span class="bts-role-tag">THE PRODUCTION</span>
+            <h3 class="bts-person-name">SUN PICTURES</h3>
+            <p class="bts-person-quote">&ldquo;BACKING THE WORLD OF DC.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="bts-part-divider"></div>
+
+        <!-- 03 — THE MUSIC MAKER (Image RIGHT, Typography LEFT) -->
+        <div class="bts-part-item part-left-text" id="bts-part-03">
+          <div class="bts-info-box">
+            <span class="bts-num">03</span>
+            <span class="bts-role-tag">THE MUSIC MAKER</span>
+            <h3 class="bts-person-name">ANIRUDH RAVICHANDER</h3>
+            <p class="bts-person-quote">&ldquo;THE SOUND THAT GIVES DC ITS PULSE.&rdquo;</p>
+          </div>
+          <div class="bts-image-box">
+            <img src="./assets/bts3_musicmaker.png" alt="Anirudh Ravichander Music Maker" class="bts-img">
+            <div class="bts-img-vignette"></div>
+          </div>
+        </div>
+
+        <div class="bts-part-divider"></div>
+
+        <!-- 04 — THE TEAM (Full Screen Wide BTS Visual) -->
+        <div class="bts-part-item part-full-team" id="bts-part-04">
+          <div class="bts-team-header">
+            <span class="bts-num">04</span>
+            <span class="bts-role-tag">THE TEAM</span>
+            <h3 class="bts-person-name">&ldquo;THE PEOPLE BEHIND THE WORLD.&rdquo;</h3>
+          </div>
+          
+          <div class="bts-team-image-box">
+            <img src="./assets/bts4_team.png" alt="Full BTS Crew & Team" class="bts-team-img">
+            <div class="bts-img-vignette"></div>
+          </div>
+
+          <p class="bts-team-caption">&ldquo;FROM VISION TO SCREEN.&rdquo;</p>
+        </div>
+
+        <!-- SECTION 4 ENDING TEXT & INDICATOR -->
+        <div class="bts-footer-block">
+          <div class="bts-closing-text">
+            <span>ONE VISION.</span>
+            <span>ONE WORLD.</span>
+            <span>ONE FILM.</span>
+          </div>
+          
+          <div class="scroll-characters-indicator">
+            <span class="characters-lbl">SCROLL TO DISCOVER THE CREATOR</span>
+            <span class="characters-icon">&darr;</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION 5: ABOUT ME — THE MIND BEHIND THE SCREEN -->
+    <section class="cinematic-act creator-act" id="act-5">
+
+      <div class="creator-section-wrapper">
+
+        <!-- TOP HEADER -->
+        <div class="creator-header-block">
+          <span class="creator-eyebrow">ABOUT ME</span>
+          <h2 class="creator-main-title">THE MIND BEHIND THE SCREEN</h2>
+          <p class="creator-sub-title">EVERY CREATION STARTS WITH A REASON.</p>
+          <div class="creator-title-line"></div>
+        </div>
+
+        <!-- 2-COLUMN GRID: LEFT INFO & RIGHT PERSONAL PHOTO -->
+        <div class="creator-grid">
+
+          <!-- LEFT COLUMN: CREATOR DETAILS -->
+          <div class="creator-left-col">
+            <div class="creator-name-badge">
+              <h3 class="creator-name">KANNAN V S</h3>
+              <div class="creator-role-tag">ECE STUDENT &bull; DEVELOPER &bull; CREATOR</div>
+            </div>
+
+            <div class="creator-info-group">
+              <h4 class="creator-group-title">WHO I AM</h4>
+              <p class="creator-group-desc">&ldquo;I&rsquo;m an ECE student passionate about electronics, coding, AI, and building things from scratch.&rdquo;</p>
+            </div>
+
+            <div class="creator-info-group">
+              <h4 class="creator-group-title">WHY I BUILT THIS</h4>
+              <p class="creator-group-desc">&ldquo;This website is my way of experimenting with cinematic web design, smooth scrolling, interactive experiences and visual storytelling &mdash; pushing myself to create something beyond an ordinary website.&rdquo;</p>
+            </div>
+
+            <div class="creator-info-group">
+              <h4 class="creator-group-title">WHAT DRIVES ME</h4>
+              <p class="creator-group-desc">&ldquo;I don't want to just learn technology. I want to use it to create something people remember.&rdquo;</p>
+            </div>
+
+            <div class="creator-motto-pipeline">
+              <span>LEARN</span> &rarr; <span>BUILD</span> &rarr; <span>FAIL</span> &rarr; <span>IMPROVE</span> &rarr; <span>CREATE</span>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: CREATOR PHOTO VISUAL -->
+          <div class="creator-right-col">
+            <div class="creator-photo-frame">
+              <img src="./assets/kannan_creator.jpg" alt="Kannan V S Creator" class="creator-photo-img">
+              <div class="creator-photo-vignette"></div>
+            </div>
+            <span class="creator-photo-label">THE CREATOR</span>
+          </div>
+
+        </div>
+
+        <!-- FINAL CLOSING QUOTE & FOOTER -->
+        <div class="creator-footer-block">
+          <blockquote class="creator-big-quote">
+            &ldquo;I DON'T WANT TO JUST LEARN TECHNOLOGY.<br>
+            I WANT TO USE IT TO CREATE SOMETHING PEOPLE REMEMBER.&rdquo;
+          </blockquote>
+
+          <div class="creator-footer-motto">
+            <span>STILL LEARNING.</span>
+            <span>STILL BUILDING.</span>
+            <span>STILL CREATING.</span>
+          </div>
+
+          <div class="creator-beginning-tag">
+            THIS IS JUST THE BEGINNING.
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FLOATING CINEMATIC MUSIC TOGGLE BUTTON -->
+  <button id="music-toggle-btn" class="music-toggle-btn" aria-label="Toggle Background Music">
+    <svg class="music-icon icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14" class="wave-outer"></path>
+      <path d="M15.54 8.46a5 5 0 0 1 0 7.08" class="wave-inner"></path>
+    </svg>
+    <svg class="music-icon icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+  </button>
+
+  <script src="main.js?v=15"></script>
+</body>
+</html>

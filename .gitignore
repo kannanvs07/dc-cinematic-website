@@ -1,0 +1,8 @@
+# Ignore node_modules (if any are created later)
+node_modules/
+
+# Ignore zip files
+*.zip
+
+# Ignore the raw downloaded mp3 in root since it's already in assets/cinematic_bgm.mp3
+*.mp3
